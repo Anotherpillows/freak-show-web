@@ -1,0 +1,193 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * THE GIRL AT THE FREAK SHOW — Dark Analog Archive design system.
+ * All colors in oklch. Dark-only palette (light + dark identical).
+ */
+
+@theme inline {
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+  --radius-2xl: 0px;
+  --radius-3xl: 0px;
+  --radius-4xl: 0px;
+
+  --color-bone: var(--bone);
+  --color-gray-medium: var(--gray-medium);
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-mono: "Space Grotesk", "JetBrains Mono", ui-monospace, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0px;
+  /* Canvas — deep asphalt / unexposed celluloid void */
+  --background: oklch(0.055 0.004 250);
+  /* Panels — matte charcoal #16171b */
+  --card: oklch(0.115 0.006 255);
+  --card-foreground: oklch(0.885 0.012 85);
+  --popover: oklch(0.115 0.006 255);
+  --popover-foreground: oklch(0.885 0.012 85);
+  /* Primary — bone off-white (used for high-emphasis text/inverts) */
+  --primary: oklch(0.885 0.012 85);
+  --primary-foreground: oklch(0.055 0.004 250);
+  /* Secondary — slightly raised charcoal */
+  --secondary: oklch(0.165 0.005 255);
+  --secondary-foreground: oklch(0.885 0.012 85);
+  --muted: oklch(0.165 0.005 255);
+  /* Muted text — silver grain gray */
+  --muted-foreground: oklch(0.605 0.012 250);
+  /* Bone off-white — primary title line (#e2dfd8) */
+  --bone: oklch(0.89 0.011 90);
+  /* Medium gray — secondary title line (#8a8d96) */
+  --gray-medium: oklch(0.605 0.012 260);
+  /* Accent 1 — desaturated dark moss green */
+  --accent: oklch(0.345 0.055 150);
+  --accent-foreground: oklch(0.92 0.01 85);
+  /* Accent 2 — deep dried-blood red */
+  --destructive: oklch(0.325 0.135 28);
+  --destructive-foreground: oklch(0.92 0.01 85);
+  /* Hairline borders — weathered lead #2a2a2e */
+  --border: oklch(0.205 0.006 255);
+  --input: oklch(0.205 0.006 255);
+  --ring: oklch(0.345 0.055 150);
+  --chart-1: oklch(0.345 0.055 150);
+  --chart-2: oklch(0.325 0.135 28);
+  --chart-3: oklch(0.605 0.012 250);
+  --chart-4: oklch(0.885 0.012 85);
+  --chart-5: oklch(0.5 0.02 250);
+  --sidebar: oklch(0.115 0.006 255);
+  --sidebar-foreground: oklch(0.885 0.012 85);
+  --sidebar-primary: oklch(0.885 0.012 85);
+  --sidebar-primary-foreground: oklch(0.055 0.004 250);
+  --sidebar-accent: oklch(0.165 0.005 255);
+  --sidebar-accent-foreground: oklch(0.885 0.012 85);
+  --sidebar-border: oklch(0.205 0.006 255);
+  --sidebar-ring: oklch(0.345 0.055 150);
+}
+
+.dark {
+  --background: oklch(0.055 0.004 250);
+  --foreground: oklch(0.885 0.012 85);
+  --card: oklch(0.115 0.006 255);
+  --card-foreground: oklch(0.885 0.012 85);
+  --popover: oklch(0.115 0.006 255);
+  --popover-foreground: oklch(0.885 0.012 85);
+  --primary: oklch(0.885 0.012 85);
+  --primary-foreground: oklch(0.055 0.004 250);
+  --secondary: oklch(0.165 0.005 255);
+  --secondary-foreground: oklch(0.885 0.012 85);
+  --muted: oklch(0.165 0.005 255);
+  --muted-foreground: oklch(0.605 0.012 250);
+  --accent: oklch(0.345 0.055 150);
+  --accent-foreground: oklch(0.92 0.01 85);
+  --destructive: oklch(0.325 0.135 28);
+  --destructive-foreground: oklch(0.92 0.01 85);
+  --border: oklch(0.205 0.006 255);
+  --input: oklch(0.205 0.006 255);
+  --ring: oklch(0.345 0.055 150);
+  --chart-1: oklch(0.345 0.055 150);
+  --chart-2: oklch(0.325 0.135 28);
+  --chart-3: oklch(0.605 0.012 250);
+  --chart-4: oklch(0.885 0.012 85);
+  --chart-5: oklch(0.5 0.02 250);
+  --sidebar: oklch(0.115 0.006 255);
+  --sidebar-foreground: oklch(0.885 0.012 85);
+  --sidebar-primary: oklch(0.885 0.012 85);
+  --sidebar-primary-foreground: oklch(0.055 0.004 250);
+  --sidebar-accent: oklch(0.165 0.005 255);
+  --sidebar-accent-foreground: oklch(0.885 0.012 85);
+  --sidebar-border: oklch(0.205 0.006 255);
+  --sidebar-ring: oklch(0.345 0.055 150);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-mono);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Analog 35mm film grain overlay */
+@utility film-grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 220px 220px;
+  mix-blend-mode: overlay;
+}
+
+/* High-contrast monochrome photo treatment */
+@utility mono-photo {
+  filter: grayscale(100%) contrast(120%);
+}
+
+/* Hairline contact-sheet frame */
+@utility contact-frame {
+  border: 1px solid var(--color-border);
+  box-shadow:
+    inset 0 0 0 3px var(--color-background),
+    inset 0 0 0 4px var(--color-border);
+}
+
+/* Typewriter label */
+@utility label-mono {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.6875rem;
+  line-height: 1;
+}
